@@ -16,5 +16,7 @@ for dataset_name in tqdm.tqdm(dataset_names, desc='Downloading datasets'):
         os.makedirs(final_direcotry_name)
     else:
         continue
-    kaggle.api.dataset_download_files(dataset_names[0], path=final_direcotry_name, unzip=True)
+    kaggle.api.dataset_download_files(dataset_name, path=final_direcotry_name, unzip=True)
 
+
+#%%
